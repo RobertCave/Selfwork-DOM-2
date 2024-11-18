@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfwork</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Selfwork DOM 2
+
+    Crea un file html con le seguenti caratteristiche:
+    
+        un input per il titolo
+        una textarea per inserire un paragrafo
+        un bottone per creare l’articolo
+    
+    
+    Al click sul bottone, crea un articolo popolato dai valori prelevati dai due input
+    
+        inserire nell’articolo anche la data di pubblicazione tramite questa istruzione → Date - JavaScript | MDN
+    
+    
+        let date = new Date();
+        let formatDate = date.toLocaleDateString()
+    
+    
+    EXTRA:
+    
+        fai in modo che, cliccando sul bottone crea articolo, se titolo o paragrafo sono vuoti, esca un alert che informi l’utente del problema
+        fai in modo che, una volta creato l’articolo, gli input vengano puliti 
+     -->
+
+
+     <div class="container">
+        <h2>Inserisci un articolo</h2>
+     
+        <input id="titolo" type="text" placeholder="Inserisci il Titolo" >
+        <textarea id="paragrafo" placeholder="Inserisci il paragrafo..." rows="6"></textarea>
+        <button id="btnCrea">Crea Articolo</button>
+        
+    </div>
+
+
+    <div id="articoli"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
